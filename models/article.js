@@ -12,7 +12,7 @@ var ArticleSchema = new Schema({
     unique: true
   },
   link: {
-      type: String
+    type: String
   },
   note: [{
     type: Schema.Types.ObjectId,
