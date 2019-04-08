@@ -1,11 +1,11 @@
 // Require mongoose
-var mongoose = require("mongoose");
+let mongoose = require("mongoose");
 
 // Create a Schema class with mongoose
-var Schema = mongoose.Schema;
+let Schema = mongoose.Schema;
 
 // Make LibrarySchema a Schema
-var ArticleSchema = new Schema({
+let ArticleSchema = new Schema({
   // name: a unique string
   title: {
     type: String,
@@ -14,14 +14,16 @@ var ArticleSchema = new Schema({
   link: {
     type: String
   },
-  note: [{
-    type: Schema.Types.ObjectId,
-    ref: "Note"
-  }]
+  note: [
+    {
+      type: Schema.Types.ObjectId,
+      ref: "Note"
+    }
+  ]
 });
 
 // Save the  model using the LibrarySchema
-var Article = mongoose.model("Article", ArticleSchema);
+let Article = mongoose.model("Article", ArticleSchema);
 
 // Export the  model
 module.exports = Article;
