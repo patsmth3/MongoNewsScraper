@@ -28,7 +28,7 @@
     "note": "^1.2.1",
     "path": "^0.12.7",
     "request": "^2.88.0",
-    "@snyk/protect": "latest"
+    "@snyk/protect": "1.680.0"
   },
   "snyk": true
 }
